@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/data/all_data_csv" />
+      <excludeFolder url="file://$MODULE_DIR$/data/LIVE_dataset" />
+      <excludeFolder url="file://$MODULE_DIR$/data/results" />
+      <excludeFolder url="file://$MODULE_DIR$/data/snapshot" />
+      <excludeFolder url="file://$MODULE_DIR$/data/TID2013_dataset" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7 (deepQA)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
