@@ -94,7 +94,7 @@ class deepIQA_model(nn.Module):
         x = self.leakyrelu(self.conv3(x))
         x = self.leakyrelu(self.conv4(x))
         x = self.leakyrelu(self.conv5(x))
-        x = self.relu(self.conv6(x)).squeeze()
+        x = self.leakyrelu(self.conv6(x)).squeeze()
 
         error = self.ave_pooling(error)
         # print('error', error.shape, 'x', x.shape)

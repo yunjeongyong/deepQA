@@ -131,8 +131,8 @@ class TID2013Dataset(Dataset):
         # dist_gray = rgb2gray(np.array(dist_img, dtype=np.float64))
         # ref_gray = rgb2gray(np.array(ref_img, dtype=np.float64))
 
-        img_d = low_frequency_sub(dist_gray * 255)
-        img_r = low_frequency_sub(ref_gray * 255)
+        img_d = low_frequency_sub(dist_gray)
+        img_r = low_frequency_sub(ref_gray)
         error_img = error_map(img_d, img_r, epsilon=1.)
         error_img_3d = np.expand_dims(error_img, axis=0)
         return error_img, img_d
