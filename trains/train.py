@@ -86,11 +86,5 @@ def trainProcess(model, optimG, trainloader, testloader, max_epoch, snapshot_dir
                   .format(epoch, itr, tmpscore, tv_reg))
 
         if epoch % 10 == 0:
-            snap_dict = snapshot(model,
-                                 testloader,
-                                 epoch,
-                                 best_lcc,
-                                 snapshot_dir,
-                                 prefix,
-                                 is_first)
+            snap_dict = snapshot()
             best_lcc = snap_dict['best']

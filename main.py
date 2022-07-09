@@ -8,7 +8,6 @@ import torch.optim as optim
 from models.deepQA import deepIQA_model as predictNet
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-
 # from datasets.custom_dataset import Kadid10kDataset
 from datasets.TID2013Dataset import TID2013Dataset
 from trains.train import trainProcess
@@ -69,4 +68,5 @@ if __name__ == '__main__':
         max_epoch,
         snapshot_dir,
         data_type,
-        is_first)
+        is_first
+    )
